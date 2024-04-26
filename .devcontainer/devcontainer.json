@@ -1,0 +1,28 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+        "cpus": 4
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "python3 -m pip install -r requirements.txt && sudo apt-get update -y && sudo apt-get install libgl1 -y",
+    "postCreateCommand": "",
+    "customizations": {
+        "codespaces": {
+            "openFiles": []
+        },
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python",
+                "github.copilot"
+            ]
+        }
+    },
+    "features": {
+    //   "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+    //     "installCudnn": true
+    //     // "cudaVersion": "12.1",
+    //     // "cudnnVersion": "8.9.5.29"
+    //   }
+    }
+}
