@@ -1,11 +1,9 @@
 import os
 import sys
-import time
 import requests
 import zipfile
 import subprocess
 import psutil
-import shutil
 from tqdm import tqdm
 
 class Updater:
